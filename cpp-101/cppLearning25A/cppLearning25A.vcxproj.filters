@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Project01A">
+      <UniqueIdentifier>{eafc3263-95c6-4e2e-bc90-b1fc6acb8953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Project01A">
+      <UniqueIdentifier>{2678a82c-31f8-48a8-9f99-6918fc5c7676}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Misc01">
+      <UniqueIdentifier>{9a05f93d-9a8d-4a4f-87a5-69da768b5437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Test01A">
+      <UniqueIdentifier>{d3edd824-7062-4d57-b855-e2a2c0deb245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Test01A">
+      <UniqueIdentifier>{77b3b1c6-7954-4f1a-b561-08cc1e913138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Project02A">
+      <UniqueIdentifier>{2c0a4615-d30c-45fb-b66d-b3fb9ec23c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Test02A">
+      <UniqueIdentifier>{e8f40fd5-60a6-4168-8ab4-9a4d47e497d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\My01-02">
+      <UniqueIdentifier>{8a8d27de-5283-444b-ac8e-b27255736348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\STL02">
+      <UniqueIdentifier>{7d997a0c-dded-4a58-9489-92a8ddd254f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test01.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="personnelManager.cpp">
+      <Filter>源文件\Project01A</Filter>
+    </ClCompile>
+    <ClCompile Include="employee.cpp">
+      <Filter>源文件\Project01A</Filter>
+    </ClCompile>
+    <ClCompile Include="post.cpp">
+      <Filter>源文件\Project01A</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>源文件\Project01A</Filter>
+    </ClCompile>
+    <ClCompile Include="boss.h">
+      <Filter>头文件\Project01A</Filter>
+    </ClCompile>
+    <ClCompile Include="boss.cpp">
+      <Filter>源文件\Project01A</Filter>
+    </ClCompile>
+    <ClCompile Include="personnel.cpp">
+      <Filter>源文件\Project01A</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTemplate.cpp">
+      <Filter>源文件\Test01A</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="personnelManager.h">
+      <Filter>头文件\Project01A</Filter>
+    </ClInclude>
+    <ClInclude Include="personnel.h">
+      <Filter>头文件\Project01A</Filter>
+    </ClInclude>
+    <ClInclude Include="employee.h">
+      <Filter>头文件\Project01A</Filter>
+    </ClInclude>
+    <ClInclude Include="post.h">
+      <Filter>头文件\Project01A</Filter>
+    </ClInclude>
+    <ClInclude Include="manager.h">
+      <Filter>头文件\Project01A</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTemplate.h">
+      <Filter>头文件\Test01A</Filter>
+    </ClInclude>
+    <ClInclude Include="animal.h">
+      <Filter>头文件\Misc01</Filter>
+    </ClInclude>
+    <ClInclude Include="base_son.h">
+      <Filter>头文件\Misc01</Filter>
+    </ClInclude>
+    <ClInclude Include="calculator.h">
+      <Filter>头文件\Misc01</Filter>
+    </ClInclude>
+    <ClInclude Include="computer.h">
+      <Filter>头文件\Misc01</Filter>
+    </ClInclude>
+    <ClInclude Include="person.h">
+      <Filter>头文件\Misc01</Filter>
+    </ClInclude>
+    <ClInclude Include="test01.h">
+      <Filter>头文件\Misc01</Filter>
+    </ClInclude>
+    <ClInclude Include="make_drink.h">
+      <Filter>头文件\Misc01</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTemplate.hpp">
+      <Filter>头文件\Test01A</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassTemplate.hpp">
+      <Filter>头文件\Test02A</Filter>
+    </ClInclude>
+    <ClInclude Include="MySort.hpp">
+      <Filter>头文件\My01-02</Filter>
+    </ClInclude>
+    <ClInclude Include="MyArray.hpp">
+      <Filter>头文件\My01-02</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.hpp">
+      <Filter>头文件\STL02</Filter>
+    </ClInclude>
+    <ClInclude Include="string.hpp">
+      <Filter>头文件\STL02</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

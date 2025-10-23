@@ -4,9 +4,9 @@ int main()
     /* 从 M 正数加到 N */
     // 获取 M 和 N
     int M, N;
-    printf("键入你想从 M 正数加到 N 的 M：");
+    printf("键入你想从 M 顺数加到 N 的 M：");
     scanf("%d", &M);
-    printf("现在键入你想从 M 正数加到 N 的 N：");
+    printf("现在键入从 M 顺数加到 N 的 N：");
     scanf("%d", &N);
     /* 方法 1：使用 for 循环述句暴力求值
     int i;
