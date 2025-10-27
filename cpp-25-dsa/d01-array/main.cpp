@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include "Array.hpp"
-using namespace std;
+
+using std::cout;
+using std::endl;
 
 int main()
 {
@@ -43,6 +45,4 @@ int main()
     {
         cout << "Value 321 not found." << endl;
     }
-
-    return 0;
 }

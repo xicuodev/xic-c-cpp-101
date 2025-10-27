@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string.h>
-using namespace std;
+
+using std::cout;
+using std::endl;
 
 void ReverseString(char *str, int size)
 {
@@ -21,5 +23,4 @@ int main()
     char str[] = "hello world";
     ReverseString(str, strlen(str));
     cout << str << endl;
-    return 0;
 }

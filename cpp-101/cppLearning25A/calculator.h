@@ -1,49 +1,64 @@
 #pragma once
 #include "main.h"
 
-class Calculator {
+class Calculator
+{
 public:
-	int getResult(char oper) {
-		if (oper == '+') return m_Num1 + m_Num2;
-		else if (oper == '-') return m_Num1 - m_Num2;
-		else if (oper == '*') return m_Num1 * m_Num2;
-		else if (oper == '/') return m_Num1 / m_Num2;
+	int getResult(char oper)
+	{
+		if (oper == '+')
+			return m_Num1 + m_Num2;
+		else if (oper == '-')
+			return m_Num1 - m_Num2;
+		else if (oper == '*')
+			return m_Num1 * m_Num2;
+		else if (oper == '/')
+			return m_Num1 / m_Num2;
 	}
 	int m_Num1;
 	int m_Num2;
 };
 
-class AbstractCalculator {
+class AbstractCalculator
+{
 public:
 	int virtual getResult() { return 0; }
 	int m_Num1;
 	int m_Num2;
 };
 
-class AddCalculator :public AbstractCalculator {
+class AddCalculator : public AbstractCalculator
+{
 public:
-	int getResult() {
+	int getResult()
+	{
 		return m_Num1 + m_Num2;
 	}
 };
 
-class MinusCalculator :public AbstractCalculator {
+class MinusCalculator : public AbstractCalculator
+{
 public:
-	int getResult() {
+	int getResult()
+	{
 		return m_Num1 - m_Num2;
 	}
 };
 
-class TimesCalculator :public AbstractCalculator {
+class TimesCalculator : public AbstractCalculator
+{
 public:
-	int getResult() {
+	int getResult()
+	{
 		return m_Num1 * m_Num2;
 	}
 };
 
-class DivideCalculator :public AbstractCalculator {
+class DivideCalculator : public AbstractCalculator
+{
 public:
-	int getResult() {
+	int getResult()
+	{
 		return m_Num1 / m_Num2;
 	}
 };

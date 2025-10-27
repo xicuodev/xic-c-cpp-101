@@ -1,6 +1,8 @@
 #include <iostream>
 #include <time.h>
-using namespace std;
+
+using std::cout;
+using std::endl;
 
 // 整型数组，把偶数调整到数组的左边，把奇数调整到数组的右边
 void AdjustArray(int *arr, int size)
@@ -67,5 +69,4 @@ int main()
         cout << arr[i] << ' ';
     }
     cout << endl;
-    return 0;
 }

@@ -2,4 +2,6 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-using namespace std;
+
+using std::cout;
+using std::endl;

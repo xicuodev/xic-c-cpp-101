@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include "SinglyLinkedList.hpp"
-using namespace std;
+
+using std::cout;
+using std::endl;
 
 int main()
 {
@@ -25,6 +27,4 @@ int main()
     list.SelfShow();
     SinglyLinkedList::Node *resultNode = list.FindFirst(123);
     cout << resultNode->GetData() << endl;
-
-    return 0;
 }

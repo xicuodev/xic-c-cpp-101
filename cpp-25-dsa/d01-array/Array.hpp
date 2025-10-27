@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
-using namespace std;
+
+using std::cout;
+using std::endl;
 
 class Array
 {
@@ -45,7 +47,7 @@ public:
     {
         if (position < 0 || position > mCurrentSize)
         {
-            throw "Invalid inerst position: " + to_string(position);
+            throw "Invalid inerst position: " + std::to_string(position);
         }
         // 从末尾开始往后挪, O(n)
         for (int i = mCurrentSize - 1; i >= position; i--)
@@ -60,7 +62,7 @@ public:
     {
         if (position < 0 || position >= mCurrentSize)
         {
-            throw "Invalid erase position: " + to_string(position);
+            throw "Invalid erase position: " + std::to_string(position);
         }
         // 从删除的后继位置开始往前挪, O(n)
         for (int i = position + 1; i < mCurrentSize; i++)
@@ -115,7 +117,7 @@ private:
 };
 
 // 打印数组元素
-ostream &operator<<(ostream &cout, Array &array)
+std::ostream &operator<<(std::ostream &cout, Array &array)
 {
     cout << '[';
     for (int i = 0; i < array.GetCurrentSize() - 1; i++)
