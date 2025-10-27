@@ -2,30 +2,39 @@
 #include <stdlib.h>
 #include <time.h>
 #include "Array.hpp"
-#include "ArrayTest.hpp"
 using namespace std;
 
 int main()
 {
-    Array &arr = *getRandomTestArray(10, 100);
+    srand((time(0))); // 用系统时间种下一颗随机数种子
+    Array arr;
+    int size = 10;
+    int scope = 100;
+
+    // 测试尾插接口
+    for (int i = 0; i < size; i++)
+    {
+        arr.PushBack(rand() % scope);
+    }
+    cout << arr << endl;
 
     // 测试尾删接口
-    arr.pop_back();
+    arr.PopBack();
     cout << arr << endl;
 
     // 测试插入接口
-    arr.insert(0, 123);
+    arr.Insert(0, 123);
     cout << arr << endl;
 
-    arr.insert(arr.getCurrentSize(), 321);
+    arr.Insert(arr.GetCurrentSize(), 321);
     cout << arr << endl;
 
     // 测试删除接口
-    arr.erase(0);
+    arr.RemoveAt(0);
     cout << arr << endl;
 
     // 测试查询接口
-    int pos = arr.find(321);
+    int pos = arr.Find(321);
     if (pos != -1)
     {
         cout << "Value 321 found at: " << pos << endl;

@@ -17,7 +17,7 @@ public:
 
 public:
     // 末尾添加元素, O(1)
-    void push_back(int value)
+    void PushBack(int value)
     {
         if (mCurrentSize == mCapacity)
         {
@@ -25,12 +25,12 @@ public:
             cout << "Run out of capacity, 扩容数组为原来的 "
                  << expandFactor << " 倍。" << endl;
             // 扩容数组，常为2倍或1.5倍
-            expand(expandFactor * mCapacity);
+            Expand(expandFactor * mCapacity);
         }
         mpArray[mCurrentSize++] = value;
     }
     // 末尾删除元素, O(1)
-    void pop_back()
+    void PopBack()
     {
         if (mCurrentSize == 0)
         {
@@ -40,7 +40,8 @@ public:
         mCurrentSize--;
     }
     // 按位置增加元素, O(n)
-    void insert(int position, int value)
+    // 本文件用到的position都表示index
+    void Insert(int position, int value)
     {
         if (position < 0 || position > mCurrentSize)
         {
@@ -55,7 +56,7 @@ public:
         mCurrentSize++;
     }
     // 按位置删除, O(n)
-    void erase(int position)
+    void RemoveAt(int position)
     {
         if (position < 0 || position >= mCurrentSize)
         {
@@ -69,7 +70,7 @@ public:
         mCurrentSize--;
     }
     // 查询元素位置, O(n)
-    int find(int value)
+    int Find(int value)
     {
         for (int i = 0; i < mCurrentSize; i++)
         {
@@ -82,7 +83,7 @@ public:
     }
 
     // mCurrentSize的Getter
-    int getCurrentSize()
+    int GetCurrentSize()
     {
         return mCurrentSize;
     }
@@ -94,7 +95,7 @@ public:
 
 private:
     // 内部数组扩容接口, O(n)
-    void expand(int size)
+    void Expand(int size)
     {
         // 开辟更长的内存
         int *mpLongerArray = new int[size];
@@ -117,9 +118,9 @@ private:
 ostream &operator<<(ostream &cout, Array &array)
 {
     cout << '[';
-    for (int i = 0; i < array.getCurrentSize() - 1; i++)
+    for (int i = 0; i < array.GetCurrentSize() - 1; i++)
     {
         cout << array[i] << ',';
     }
-    return cout << array[array.getCurrentSize() - 1] << ']';
+    return cout << array[array.GetCurrentSize() - 1] << ']';
 }
