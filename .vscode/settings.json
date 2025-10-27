@@ -6,7 +6,12 @@
   "files.associations": {
     "stdlib.h": "c",
     "string.h": "c",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "__hash_table": "cpp",
+    "deque": "cpp",
+    "string": "cpp",
+    "unordered_map": "cpp",
+    "vector": "cpp"
   },
   "cmake.sourceDirectory": "/Users/ror/Projects/CodeProjects/c-cpp/cmake/demo01-makefile"
 }
