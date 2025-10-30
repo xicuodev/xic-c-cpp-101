@@ -58,5 +58,6 @@
     "variant": "cpp"
   },
   "cmake.sourceDirectory": "/Users/ror/Projects/CodeProjects/c-cpp/cmake/demo01-makefile",
-  "todo-tree.tree.disableCompactFolders": false
+  "todo-tree.tree.disableCompactFolders": false,
+  "editor.fontLigatures": true
 }

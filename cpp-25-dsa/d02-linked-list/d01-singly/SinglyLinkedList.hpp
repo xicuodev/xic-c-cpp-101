@@ -12,8 +12,12 @@ public:
         friend class SinglyLinkedList;
 
     public:
-        Node(int data = 0) : data_(data), nextNode_(nullptr) {}
+        Node(int data = 0, Node *nextNode = nullptr)
+            : data_(data), nextNode_(nextNode) {}
         int GetData() { return data_; }
+        void SetData(int data) { data_ = data; }
+        Node *GetNextNode() { return nextNode_; }
+        void SetNextNode(Node *nextNode) { nextNode_ = nextNode; }
 
     private:
         int data_;
@@ -104,6 +108,11 @@ public:
             node = node->nextNode_;
         }
         return nullptr;
+    }
+
+    Node *GetHeadNode()
+    {
+        return headNode_;
     }
 
 private:

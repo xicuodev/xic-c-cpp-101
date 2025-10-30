@@ -1,19 +1,16 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
-#include "SinglyLinkedList.hpp"
+#include "SinglyLinkedListMock.hpp"
 
 using std::cout;
 using std::endl;
 
+typedef SinglyLinkedList::Node Node;
+
 int main()
 {
-    SinglyLinkedList list;
-    srand(time(0));
-    for (int i = 0; i < 10; i++)
-    {
-        list.InsertHead(rand() % 100);
-    }
+    SinglyLinkedList &list = GetMockRandomSinglyLinkedList();
     list.SelfShow();
 
     list.InsertHead(321);
@@ -25,6 +22,6 @@ int main()
 
     list.InsertTail(123);
     list.SelfShow();
-    SinglyLinkedList::Node *resultNode = list.FindFirst(123);
+    Node *resultNode = list.FindFirst(123);
     cout << resultNode->GetData() << endl;
 }
